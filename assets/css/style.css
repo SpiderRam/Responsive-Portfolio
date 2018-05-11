@@ -1,0 +1,275 @@
+/* Makes width and height easier to adjust */
+* {
+    box-sizing: border-box;
+}
+
+/* overflow: auto lets the container stretch to
+accommodate the content */
+body {
+    /* Background pattern from Toptal Subtle Patterns */    
+    background-image: url(../images/escher.png);
+    color: #777777;
+    overflow: auto;
+}
+
+header {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom: 4px solid;
+}
+
+.main h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 4px #cccccc;
+    margin-bottom: 20px;
+    font-family: Georgia;
+}
+
+.heading {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* margin: 0 auto centers the element */
+.topbar {
+    margin: 0 auto;
+    border-bottom: 3px solid #cccccc;
+}
+
+/* inline-block lets you change the padding, etc., 
+and there is no automatic line break, so more than one
+element can share a line. */
+header h1 {
+    display: inline-block;
+    padding: 25px;
+    font-size: 25px;
+    font-family: Georgia;
+}
+
+/* Here inline-block allows the nav links to sit on the 
+same line as the h1 block, and the padding, borders, color, 
+float, etc. of each element can be adjusted as desired. */
+header nav {
+    float: right;
+    color: #777777;
+    display: inline-block;
+    padding: 25px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* these borders create the dividing lines 
+between the nav links. */
+.link {
+    border-right: 2px solid #dddddd;
+    padding-right: 5px;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia;
+}
+
+h2 {
+    background-color: #ffffff;
+    color: #4aaaa5;
+}
+
+.main {
+    width: 960px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    overflow: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 5px 20px 5px 20px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 25px;
+}
+
+.profile_pic {
+    float: left;
+    margin: 0px 20px 5px 0px;
+}
+
+/* Creates spaces between paragraphs. */
+/* I was surprised I couldn't make it work with just 
+p, I had to use .main p { */
+.main p {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* You don't want to know how long the solution to 
+moving the copyright text to the bottom of the box
+eluded me.  Got it now.  ;-) */
+.bottombar {
+    background-color: #666666;
+    border-top: solid 5px #4aaaa5;
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* Begin contact.html specific styling */
+
+/* Name and email got the field class to add padding 
+to their input boxes. */
+.field {
+    width: 100%;
+    padding: 12px 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    height: 150px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    overflow: auto;
+    padding: 12px 25px;
+    font-size: 18px;
+}
+
+
+/* Begin portfolio.html specific styling */
+
+/* I feel like there was simpler way to position 
+the five boxes, but my other attempts were unsuccessful.  
+I had good success with flex box, but it still feels 
+like I missed something, and that I was lucky it worked out. */
+.box {
+    background-color: #4aaaa5;
+    padding: 10px 25px 10px 25px;
+    margin-top: 130px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* I think I could use flex box more efficiently,
+but this worked for this assignment.  Much
+to learn.*/
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
+
+/* I just decided to use my own pics and categories, 
+I'm sure they'll need to change in a future iteration. */
+#flora {
+    display: inline-block;
+    background-image: url(../images/flora.png);
+    width: 275px;
+    height: 200px; 
+    overflow: auto;
+}
+
+#fauna {
+    display: inline-block;
+    background-image: url(../images/fauna.png);
+    width: 275px;
+    height: 200px; 
+    overflow: auto;
+}
+
+#projects {
+    display: inline-block;
+    background-image: url(../images/projects.png);
+    width: 275px;
+    height: 200px; 
+    overflow: auto;
+}
+
+#geekery {
+    display: inline-block;
+    background-image: url(../images/geekery.png);
+    width: 275px;
+    height: 200px; 
+    overflow: auto;
+}
+
+#travels {
+    display: inline-block;
+    background-image: url(../images/travels.png);
+    width: 275px;
+    height: 200px;
+    overflow: auto;
+}
+
+/* Adds gaps between flexbox children in the row. */
+#flora, #projects, #travels {
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 640px) {
+    
+    header h1 {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        background-color: #ffffff;
+        margin-bottom: 25px;
+    }
+
+    .main {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .bottombar {
+        width: 100%;
+    }
+
+    /* Changing #flora to match didn't fix the offset */
+    #fauna, #geekery {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .main {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .bottombar {
+        width: 100%;
+    }
+
+    #fauna, #flora, #projects, #geekery, #travels {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+
+    .main {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .bottombar {
+        width: 100%;
+    }
+
+    #fauna, #flora, #projects, #geekery, #travels {
+        margin-top: 25px;
+    }
+}
