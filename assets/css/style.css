@@ -150,7 +150,12 @@ like I missed something, and that I was lucky it worked out. */
     padding: 10px 25px 10px 25px;
     margin-top: 130px;
     text-align: center;
-    color: #ffffff;
+    
+    color: #F0F8FF;
+    border: 2px solid #2F4F4F;
+    
+    font-size: 20px;
+    text-shadow: 2px 2px #2F4F4F;
 }
 
 /* I think I could use flex box more efficiently,
@@ -164,25 +169,25 @@ to learn.*/
 
 /* I just decided to use my own pics and categories, 
 I'm sure they'll need to change in a future iteration. */
-#flora {
+#hangman {
     display: inline-block;
-    background-image: url(../images/flora.png);
+    background-image: url(../images/p_cylon.png);
     width: 275px;
     height: 200px; 
     overflow: auto;
 }
 
-#fauna {
+#crystals {
     display: inline-block;
-    background-image: url(../images/fauna.png);
+    background-image: url(../images/p_agate.png);
     width: 275px;
     height: 200px; 
     overflow: auto;
 }
 
-#projects {
+#botanicalTrivia {
     display: inline-block;
-    background-image: url(../images/projects.png);
+    background-image: url(../images/p_hosta.png);
     width: 275px;
     height: 200px; 
     overflow: auto;
@@ -205,7 +210,7 @@ I'm sure they'll need to change in a future iteration. */
 }
 
 /* Adds gaps between flexbox children in the row. */
-#flora, #projects, #travels {
+#hangman, #botanicalTrivia, #travels {
     margin-right: 25px;
 }
 
@@ -230,8 +235,8 @@ I'm sure they'll need to change in a future iteration. */
         width: 100%;
     }
 
-    /* Changing #flora to match didn't fix the offset */
-    #fauna, #geekery {
+    /* Changing #hangman to match didn't fix the offset */
+    #crystals, #geekery {
         margin-top: 25px;
     }
 }
@@ -250,7 +255,7 @@ I'm sure they'll need to change in a future iteration. */
         width: 100%;
     }
 
-    #fauna, #flora, #projects, #geekery, #travels {
+    #crystals, #hangman, #botanicalTrivia, #geekery, #travels {
         margin-top: 25px;
     }
 }
@@ -269,7 +274,7 @@ I'm sure they'll need to change in a future iteration. */
         width: 100%;
     }
 
-    #fauna, #flora, #projects, #geekery, #travels {
+    #crystals, #hangman, #botanicalTrivia, #geekery, #travels {
         margin-top: 25px;
     }
 }
