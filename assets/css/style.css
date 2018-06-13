@@ -193,9 +193,9 @@ I'm sure they'll need to change in a future iteration. */
     overflow: auto;
 }
 
-#geekery {
+#GIFs {
     display: inline-block;
-    background-image: url(../images/geekery.png);
+    background-image: url(../images/Escher_good_evil.jpg);
     width: 275px;
     height: 200px; 
     overflow: auto;
