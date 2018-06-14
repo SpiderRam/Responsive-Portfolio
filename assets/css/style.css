@@ -201,12 +201,13 @@ I'm sure they'll need to change in a future iteration. */
     overflow: auto;
 }
 
-#travels {
+#trains {
     display: inline-block;
-    background-image: url(../images/travels.png);
+    background-image: url(../images/train_portfolio.png);
     width: 275px;
     height: 200px;
     overflow: auto;
+    background-size: 100% 100%;
 }
 
 /* Adds gaps between flexbox children in the row. */
