@@ -210,6 +210,17 @@ I'm sure they'll need to change in a future iteration. */
     background-size: 100% 100%;
 }
 
+#RecipeBox {
+    display: inline-block;
+    background-image: url(../images/bottles-01.jpg);
+    width: 275px;
+    height: 200px;
+    overflow: auto;
+    background-size: 100% 100%;
+    border: 1px solid black;
+    margin-left: 22px;
+}
+
 /* Adds gaps between flexbox children in the row. */
 #hangman, #botanicalTrivia, #travels {
     margin-right: 25px;
