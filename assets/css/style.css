@@ -3,8 +3,7 @@
     box-sizing: border-box;
 }
 
-/* overflow: auto lets the container stretch to
-accommodate the content */
+
 body {
     /* Background pattern from Toptal Subtle Patterns */    
     background-image: url(../images/escher.png);
@@ -32,15 +31,11 @@ header {
     margin: 0 auto;
 }
 
-/* margin: 0 auto centers the element */
 .topbar {
     margin: 0 auto;
     border-bottom: 3px solid #cccccc;
 }
 
-/* inline-block lets you change the padding, etc., 
-and there is no automatic line break, so more than one
-element can share a line. */
 header h1 {
     display: inline-block;
     padding: 25px;
@@ -48,11 +43,7 @@ header h1 {
     font-family: Georgia;
 }
 
-/* Here inline-block allows the nav links to sit on the 
-same line as the h1 block, and the padding, borders, color, 
-float, etc. of each element can be adjusted as desired. */
 header nav {
-    float: right;
     color: #777777;
     display: inline-block;
     padding: 25px;
@@ -60,8 +51,6 @@ header nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* these borders create the dividing lines 
-between the nav links. */
 .link {
     border-right: 2px solid #dddddd;
     padding-right: 5px;
@@ -96,17 +85,11 @@ h2 {
     margin: 0px 20px 5px 0px;
 }
 
-/* Creates spaces between paragraphs. */
-/* I was surprised I couldn't make it work with just 
-p, I had to use .main p { */
 .main p {
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* You don't want to know how long the solution to 
-moving the copyright text to the bottom of the box
-eluded me.  Got it now.  ;-) */
 .bottombar {
     background-color: #666666;
     border-top: solid 5px #4aaaa5;
@@ -117,8 +100,6 @@ eluded me.  Got it now.  ;-) */
 
 /* Begin contact.html specific styling */
 
-/* Name and email got the field class to add padding 
-to their input boxes. */
 .field {
     width: 100%;
     padding: 12px 15px;
@@ -141,10 +122,6 @@ input[type=submit] {
 
 /* Begin portfolio.html specific styling */
 
-/* I feel like there was simpler way to position 
-the five boxes, but my other attempts were unsuccessful.  
-I had good success with flex box, but it still feels 
-like I missed something, and that I was lucky it worked out. */
 .box {
     background-color: #4aaaa5;
     padding: 10px 25px 10px 25px;
@@ -158,17 +135,12 @@ like I missed something, and that I was lucky it worked out. */
     text-shadow: 2px 2px #2F4F4F;
 }
 
-/* I think I could use flex box more efficiently,
-but this worked for this assignment.  Much
-to learn.*/
 .flex {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 30px;
 }
 
-/* I just decided to use my own pics and categories, 
-I'm sure they'll need to change in a future iteration. */
 #hangman {
     display: inline-block;
     background-image: url(../images/p_cylon.png);
@@ -218,11 +190,9 @@ I'm sure they'll need to change in a future iteration. */
     overflow: auto;
     background-size: 100% 100%;
     border: 1px solid black;
-    margin-left: 22px;
 }
 
-/* Adds gaps between flexbox children in the row. */
-#hangman, #botanicalTrivia, #travels {
+#hangman, #botanicalTrivia, #travels, #trains {
     margin-right: 25px;
 }
 
@@ -247,7 +217,6 @@ I'm sure they'll need to change in a future iteration. */
         width: 100%;
     }
 
-    /* Changing #hangman to match didn't fix the offset */
     #crystals, #geekery {
         margin-top: 25px;
     }
